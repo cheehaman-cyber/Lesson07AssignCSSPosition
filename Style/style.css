@@ -1,0 +1,166 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif; /* Uses the Figma font; falls back to sans-serif if unavailable. */
+    margin: 0;
+}
+.container {
+    max-width: 1111px;
+    margin: 0 auto;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between; /*places the logo at the container’s left edge and the navigation at its right edge, with the available space between them.*/
+    align-items: center; /*Align the logo and navigation vertically.*/
+    min-height: 78px; /* Matches the header height measured in Figma. */
+}
+.header__nav {
+    font-size: 14px; /* Matches the navigation text size measured in Figma. */
+    display: flex; /* Places the navigation links in a row. */
+    align-items: center; /* Centers the links vertically within the row. */
+    gap: 20px; /* Adds 20px of space between neighboring links. */
+}
+.header a { /* .header selects class="header". The dot means class. a selects <a> elements—the links. */
+    text-decoration: none; /* Removes underlines from links inside the header. */
+    color: #2f281e; /* Sets the header links to a dark brown instead of blue. */
+}
+.header .sign-up {
+    color: #ffffff; /* Makes the Sign Up text white. */
+    background-color: #ff9900; /* Makes only the Sign Up background orange. */
+    width: 110px; /* Matches the Sign Up button width measured in Figma. */
+    height: 46px; /* Matches the Sign Up button height measured in Figma. */
+    display: flex; /* Lets us align the text inside the button. */
+    justify-content: center; /* Centers the text from left to right inside the button. */
+    align-items: center; /* Centers the text from top to bottom inside the button. */
+}
+.header .sign-in {
+    color: #173a56; /* Matches the dark blue Sign In text in Figma. */
+    border: 1px solid #bcd0e5; /* Draws a thin, solid pale blue outline. */
+    width: 102px; /* Matches the Sign In button width measured in Figma. */
+    height: 46px; /* Matches the Sign In button height measured in Figma. */
+    display: flex; /* Lets us align the text inside the button. */
+    justify-content: center; /* Centers the text from left to right inside the button. */
+    align-items: center; /* Centers the text from top to bottom inside the button. */
+    font-size: 16px; /* Matches the Sign In text size in Figma. */
+    border-radius: 4px; /* Rounds the button corners; 4px is a visual estimate. */
+    font-weight: 600; /* Requests SemiBold, matching the weight shown in Figma. */
+}
+.hero .container { /* is the parent holding the text and image containers. It needs display: flex to place them side by side. */
+    display: flex; /* Put the two boxes beside each other. */
+    align-items: center; /* Centers the text and image vertically relative to each other. */
+}
+.hero__image img { /* selects the image itself. It needs sizing rules to fit inside its container without stretching. */
+    max-width: 100%; /* Keeps the image within its container. */
+    height: auto; /* Preserves the image’s proportions. */
+    display: block; /* Don’t leave a little gap underneath. */
+}
+.hero {
+    padding-top: 50px; /* Adds space above the hero: 128px minus our 78px header. */
+}
+.hero__content p {
+    max-width: 458px; /* The paragraph’s blue label shows 458 × 95 , Matches the paragraph width in Figma so text wraps naturally. */
+    font-size: 18px; /* Matches the paragraph text size shown in Figma. */
+    line-height: 28px; /* Sets each line’s height to 28px, matching Figma. */
+    color: #544837; /* Uses the brown paragraph color shown in Figma. */
+}
+.hero__content h1 { /* Header : The Design Thinking superpowers */
+    font-size: 44px; /* Matches the main heading size shown in Figma. */
+    line-height: 54px; /* line-height controls how much vertical space each line of text gets. */
+    font-weight: 700; /* Uses Poppins Bold which is 700, matching the heading in Figma. */
+    color: #2f281e; /* Matches the heading’s Fill color shown in Figma. */
+    max-width: 518px; /* Matches the heading’s Figma text box and lets the words wrap. */
+}
+.get-started {
+    background-color: #ff9900; /* Matches the orange button color in Figma. */
+    color: #ffffff; /* Makes the Get started text white. */
+    text-decoration: none; /* Removes the link’s underline so it looks like a button. */
+    display: inline-flex; /* Enable Flexbox inside the Get started link. Lets us size the button and align its text while keeping it inline. */
+    width: 175px; /* Matches the Get started button width shown in Figma. */
+    height: 53px; /* Matches the Get started button height shown in Figma. */
+    justify-content: center; /* Centers the text from left to right inside the button. */
+    align-items: center; /* Centers the text from top to bottom inside the button. */
+    border-radius: 4px; /* Rounds the corners; 4px is an estimate from the design. */
+}
+.hero__actions {
+    display: flex; /* Places Get started and Watch the Video beside each other. */
+    align-items: center; /* Lines up their vertical centers. */
+    gap: 30px; /* Leaves 30px between Get started and Watch the Video. */
+}
+.watch-video {
+    display: inline-flex; /* Places the triangle and text in a row. */
+    align-items: center; /* Centers the triangle and text vertically. */
+    gap: 9px; /* Matches the spacing shown in your Figma video-link group. */
+    color: #FF9900; /* Makes the Get started yellow. */
+}
+.features { /* Section Container & Section Title */
+    padding: 100px 0 80px 0;
+    text-align: center;
+}
+.features__heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features__heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2f281e;
+    line-height: 52px;/* Figma mention AUTO:52px */
+    max-width: 540px; /* Forces "your superpowers" onto line 2 */
+    margin: 0 auto;   /* Centers the title block horizontally */
+    text-align: center;
+}
+
+
+/* Container for the 4 Feature Cards */
+.features__grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1095px; /* Exact width from Figma selection */
+    margin: 0 auto 50px auto; /* Centers container & adds space above Sign Up button */
+    gap: 30px; /* Matches Figma Auto Layout spacing */
+}
+.features__button {
+    text-align: center;
+}
+.features__button .button {
+    width: 175px;
+    height: 53px;
+}
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.button--primary {
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
+
+/* Individual Feature Card */
+.feature {
+    width: 240px; /* Exact card width from Figma selection */
+    text-align: left;
+}
+
+/* Feature Headings */
+.feature h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f281e; /* Color hex from Figma inspector */
+    margin-top: 30px; /* Distance from icon */
+    margin-bottom: 13px;
+}
+
+/* Feature Paragraphs */
+.feature p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837; /* Color hex from Figma inspector */
+    margin: 0;
+}

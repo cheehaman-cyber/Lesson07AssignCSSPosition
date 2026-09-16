@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productly</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/normalize.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- Loads Poppins in Regular, SemiBold, and Bold weights. -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="#">Productly</a>
+                <a href="#">
+                    <img src="Image/Logo.png" alt=""> 
+                    <img src="Image/Productly.png" alt="Productly"> 
+                </a>
             </div>
 
             <nav class="header__nav">
@@ -19,8 +25,8 @@
                 <a href="#">Customers</a>
                 <a href="#">Pricing</a>
                 <a href="#">Resources</a>
-                <a href="#">Sign In</a>
-                <a href="#">Sign Up</a>
+                <a href="#" class="sign-in">Sign In</a> <!-- style Sign In separately. -->
+                <a href="#" class="sign-up">Sign Up</a> <!-- Class = style this link separately. -->
             </nav>
         </div> 
     </header>
@@ -30,40 +36,63 @@
                 <div class="container">
                     <div class="hero__content">
                         <h1>The Design Thinking superpowers</h1>
-                            <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
-                    </div>
+                        <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+
                     <div class="hero__actions">
-                        <a href="#">Get started</a>
-                        <a href="#">Watch the Video</a>
+                        <a href="#" class="get-started">Get started</a> <!-- this link as a button. -->
+                        <a href="#" class="watch-video">
+                        <img src="Image/Triangle Copy 6.png" alt=""> <!-- Adds the triangle. -->
+                        <span>Watch the Video</span>
+                        </a>
                     </div>
-                    <div class="hero__image"></div>
-                </div>
+                    </div>  
+
+                    <div class="hero__image">
+                    <img src="Image/Image 01.png" alt="Three people jumping">
+                    
+                    </div>
+                    </div>
             </section>
 
             <section class="features">
                 <div class="container">
+
                     <div class="features__heading">
                         <h2>We design tools to unveil your superpowers</h2>
                     </div>
-                    <div class="feature">
-                        <h3>First click tests</h3>
+
+                    <div class="features__grid">
+                    
+                        <div class="feature">
+                            <div class="feature_icon"></div>
+                            <h3>First click tests</h3>
                             <p>While most people enjoy casino gambling,</p>
-                    </div>
-                    <div class="feature">
-                        <h3>Design surveys</h3>
-                            <p>Sports betting, lottery and bingo playing for the fun</p>
-                    </div>
-                    <div class="feature">
-                        <h3>Preference tests</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__icon"></div>
+                            <h3>Design surveys</h3>
+                            <p>Sports betting, lottery and bingo playing for the fun.</p>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__icon"></div>
+                            <h3>Preference tests</h3>
                             <p>The Myspace page defines the individual.</p>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__icon"></div>
+                            <h3>Five second tests</h3>
+                            <p>Personal choices and the overall personality of the person.</p>
+                        </div>
+
                     </div>
-                    <div class="feature">
-                       <h3>Five second tests</h3> 
-                            <p>Personal choices and the overall personality of the person. </p>
-                    </div>
+
                     <div class="features__button">
-                        <a href="#">SIGN UP NOW</a>
+                        <a href="#" class="button button--primary">SIGN UP NOW</a>
                     </div>
+
                 </div>
             </section>
 
@@ -122,7 +151,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__logo">
-                    <a href="#">Productly></a>
+                    <a href="#">Productly</a>
                 </div>
                 <div class="footer__links">
                     <a href="#">About Us</a>
