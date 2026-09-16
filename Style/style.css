@@ -147,30 +147,30 @@ body {
 }
 
 .professionals .container {
-display: flex; /* don't overflow */
-justify-content: space-between;  /* don't stretch */
-align-items: center;  /* clean layout */
+    display: flex; /* don't overflow */
+    justify-content: space-between;  /* don't stretch */
+    align-items: center;  /* clean layout */
 }
 
 .professionals__content {
-max-width: 486px;
+    max-width: 486px;
 }
 
 .professionals__image {
-max-width: 520px;
+    max-width: 520px;
 }
 
 .professionals__image img{
-max-width: 100%;
+    max-width: 100%;
 height: auto;
 display: block;
 }
 
 .professionals__content h2{
-font size: 36px;
-font weight: 700;
-color: #2F281E;
-margin: 0 0 22 0px;
+    font size: 36px;
+    font weight: 700;
+    color: #2F281E;
+    margin: 0 0 22 0px;
 }
 
 .professionals__content h3 {
@@ -191,4 +191,42 @@ margin: 0 0 22 0px;
     margin: 25px 0 12px 0;
 }
 
+/* Product Managers Section */
+.section-layout .container {
+    display: flex; /* don't overflow */
+    justify-content: space-between;  /* don't stretch */
+    align-items: center;  /* clean layout */
+}
+.managers__image {
+    max-width: 520px;
+}
 
+.managers__image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.managers__content {
+    width: 486px;
+}
+
+.managers__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.managers__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.managers__list img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    flex-shrink: 0;
+}
