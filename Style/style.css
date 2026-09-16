@@ -167,8 +167,8 @@ display: block;
 }
 
 .professionals__content h2{
-    font size: 36px;
-    font weight: 700;
+    font-size: 36px;
+    font-weight: 700;
     color: #2F281E;
     margin: 0 0 22 0px;
 }
@@ -229,4 +229,44 @@ display: block;
     height: 35px;
     display: block;
     flex-shrink: 0;
+}
+
+/* Marketers Section */
+.marketers {
+    margin-top: 104px;
+}
+
+.marketers__content {
+    max-width: 486px;
+}
+
+.marketers__image {
+    max-width: 520px;
+}
+
+.marketers__image img{
+    max-width: 100%;
+height: auto;
+display: block;
+}
+
+.marketers__content h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #2F281E;
+    margin: 0 0 22 0px;
+}
+
+.marketers__content p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin: 0;
+}
+
+.marketers__content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2f281e;
+    margin: 25px 0 12px 0;
 }
