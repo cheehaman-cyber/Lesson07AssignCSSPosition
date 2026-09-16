@@ -141,26 +141,54 @@ body {
     color: #ffffff;
 }
 
-
-/* Individual Feature Card */
-.feature {
-    width: 240px; /* Exact card width from Figma selection */
-    text-align: left;
+ /* Design Professionals Section */
+.professionals {
+    margin-top: 104px;
 }
 
-/* Feature Headings */
-.feature h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2f281e; /* Color hex from Figma inspector */
-    margin-top: 30px; /* Distance from icon */
-    margin-bottom: 13px;
+.professionals .container {
+display: flex; /* don't overflow */
+justify-content: space-between;  /* don't stretch */
+align-items: center;  /* clean layout */
 }
 
-/* Feature Paragraphs */
-.feature p {
+.professionals__content {
+max-width: 486px;
+}
+
+.professionals__image {
+max-width: 520px;
+}
+
+.professionals__image img{
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.professionals__content h2{
+font size: 36px;
+font weight: 700;
+color: #2F281E;
+margin: 0 0 22 0px;
+}
+
+.professionals__content h3 {
+    margin-top: 12px;
+}
+
+.professionals__content p {
     font-size: 16px;
     line-height: 26px;
-    color: #544837; /* Color hex from Figma inspector */
+    color: #544837;
     margin: 0;
 }
+
+.professionals__content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2f281e;
+    margin: 25px 0 12px 0;
+}
+
+
