@@ -145,21 +145,17 @@ body {
 .professionals {
     margin-top: 104px;
 }
-
 .professionals .container {
     display: flex; /* don't overflow */
     justify-content: space-between;  /* don't stretch */
     align-items: center;  /* clean layout */
 }
-
 .professionals__content {
     max-width: 486px;
 }
-
 .professionals__image {
     max-width: 520px;
 }
-
 .professionals__image img{
     max-width: 100%;
 height: auto;
@@ -172,18 +168,15 @@ display: block;
     color: #2F281E;
     margin: 0 0 22 0px;
 }
-
 .professionals__content h3 {
     margin-top: 12px;
 }
-
 .professionals__content p {
     font-size: 16px;
     line-height: 26px;
     color: #544837;
     margin: 0;
 }
-
 .professionals__content h3 {
     font-size: 16px;
     font-weight: 700;
@@ -200,30 +193,25 @@ display: block;
 .managers__image {
     max-width: 520px;
 }
-
 .managers__image img{
     max-width: 100%;
     height: auto;
     display: block;
 }
-
 .managers__content {
     width: 486px;
 }
-
 .managers__list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .managers__list li {
     display: flex;
     align-items: flex-start;
     gap: 16px;
     margin-bottom: 30px;
 }
-
 .managers__list img {
     width: 35px;
     height: 35px;
@@ -235,38 +223,81 @@ display: block;
 .marketers {
     margin-top: 104px;
 }
-
 .marketers__content {
     max-width: 486px;
 }
-
 .marketers__image {
     max-width: 520px;
 }
-
 .marketers__image img{
     max-width: 100%;
 height: auto;
 display: block;
 }
-
 .marketers__content h2{
     font-size: 36px;
     font-weight: 700;
     color: #2F281E;
     margin: 0 0 22 0px;
 }
-
 .marketers__content p {
     font-size: 16px;
     line-height: 26px;
     color: #544837;
     margin: 0;
 }
-
 .marketers__content h3 {
     font-size: 16px;
     font-weight: 700;
     color: #2f281e;
     margin: 25px 0 12px 0;
 }
+
+/* Footer */
+.footer {
+    border-top: 1px solid #bcd0e5;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+.footer .container {
+    display: flex; /* don't overflow */
+    justify-content: space-between;  /* don't stretch */
+    align-items: flex-start;
+}
+.footer__logo img {
+    width: 185px;
+    height: auto;
+    display: block;
+}
+.footer__links{
+    display: flex;
+    gap: 80px;
+}
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__column a {
+    text-decoration: none;
+    color: #544837;
+    font-size: 16px;
+}
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer__newsletter input {
+    width: 325px;
+    height: 48px;
+    box-sizing: border-box;
+}
+.footer__newsletter .button {
+    width: 131px;
+    height: 39px;
+    border: none;
+}
+
+
