@@ -1,4 +1,4 @@
-{
+* {
     box-sizing: border-box;
 }
 
@@ -94,6 +94,18 @@ body {
     gap: 9px; /* Matches the spacing shown in your Figma video-link group. */
     color: #FF9900; /* Makes the Get started yellow. */
 }
+.watch-video img {
+     width: 17px;
+    height: 19px;
+    display: block;
+    position: relative;
+    top: 1px;
+    transform: scale(1);
+}
+.watch-video:hover img {
+    transform: scale(1.15);
+}
+
 .features { /* Section Container & Section Title */
     padding: 100px 0 80px 0;
     text-align: center;
@@ -145,11 +157,6 @@ body {
 .professionals {
     margin-top: 104px;
 }
-.professionals .container {
-    display: flex; /* don't overflow */
-    justify-content: space-between;  /* don't stretch */
-    align-items: center;  /* clean layout */
-}
 .professionals__content {
     max-width: 486px;
 }
@@ -166,10 +173,7 @@ display: block;
     font-size: 36px;
     font-weight: 700;
     color: #2F281E;
-    margin: 0 0 22 0px;
-}
-.professionals__content h3 {
-    margin-top: 12px;
+    margin: 0 0 22px 0;
 }
 .professionals__content p {
     font-size: 16px;
@@ -238,7 +242,7 @@ display: block;
     font-size: 36px;
     font-weight: 700;
     color: #2F281E;
-    margin: 0 0 22 0px;
+    margin: 0 0 22px 0;
 }
 .marketers__content p {
     font-size: 16px;
